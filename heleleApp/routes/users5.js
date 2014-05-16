@@ -1,0 +1,12 @@
+var express = require('express');
+var router = express.Router();
+
+var Todo = require('./models/todo');
+
+/* GET home page. */
+router.get('/', function(req, res) {
+  //res.render('index.jade', { title: 'Express' });
+   //res.json('single page app service : angular framework service');
+   res.sendfile('./public/ember/index.html'); 
+});
+module.exports = router;

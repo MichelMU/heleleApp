@@ -1,0 +1,79 @@
+<!doctype html>
+
+<!-- ASSIGN OUR ANGULAR MODULE -->
+<html >
+<head>
+	<!-- META -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"><!-- Optimize mobile viewport -->
+
+	<title>Node/Angular ui-router test App</title>
+
+	<!-- SCROLLS -->
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"><!-- load bootstrap -->
+	
+
+	<!-- SPELLS -->
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.4/angular.min.js"></script><!-- load angular 1.2.4 -->
+
+	<script src="angularTest2/js/app.js"></script> 
+	<script src="angularTest2/js/controllers.js"></script> 
+	<script src="angularTest2/js/directives.js"></script> 
+	<script src="angularTest2/js/filters.js"></script> 
+	<script src="angularTest2/js/services.js"></script> 
+<!-- 
+<script src="src='bower_components/angular-route/angular-route.js'"></script> 
+
+<script src='//cdnjs.cloudflare.com/ajax/libs/socket.io/0.9.6/socket.io.min.js'></script> 
+
+
+  <script  src='bower_components/angular/angular.js'> </script>
+  <script  src='bower_components/angular-route/angular-route.js' > </script>
+
+   -->
+
+ <script  src='bower_components/jquery/dist/jquery.js' > </script>
+  <script  src='bower_components/angular-ui-router/release/angular-ui-router.js' > </script>
+
+</head>
+
+<body ng-app="routerApp">
+
+<!-- NAVIGATION -->
+<nav class="navbar navbar-inverse" role="navigation">
+    <div class="navbar-header">
+        <a class="navbar-brand" ui-sref="#">AngularUI Router</a>
+    </div>
+    <ul class="nav navbar-nav">
+        <li><a ui-sref="home">Home</a></li>
+        <li><a ui-sref="about">About</a></li>
+    </ul>
+</nav>
+
+<!-- MAIN CONTENT -->
+<!-- THIS IS WHERE WE WILL INJECT OUR CONTENT ============================== -->
+<div class="container">
+    <div ui-view></div>
+</div>
+
+<div class="text-center">
+    <p>A tutorial by <a href="http://scotch.io" target="_blank">scotch.io</a></p>
+    <p>View the tutorial: <a href="http://scotch.io/tutorials/javascript/angular-routing-using-ui-router" target="_blank">AngularJS Routing using UI-Router</a></p>
+</div>
+
+<!-- 
+
+<body >
+<h1>helele.....</h1>
+
+	<div class="container">
+
+		<header ng-include='angularTest2/templates/nav.html'></header>
+		
+		<div ng-view></div>
+
+		<footer ng-include='angularTest2/templates/footer.html'></footer> 
+	</div>
+
+</body>
+</html> -->
